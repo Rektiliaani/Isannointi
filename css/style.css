@@ -30,11 +30,28 @@ body{
 @media only screen and (min-width: 720px) {
   [class*="col-"] {
     height: 220px;
+	
+  }
+     [class="column"] {
+	   width:100px;
+  }
+}
+@media only screen and (max-width: 620px) {
+
+     [class*="col"] {
+	   width:100%;
   }
 }
 @media only screen and (min-width: 1080px) {
   [class*="col-"] {
     height: 280px;
+  }
+  [class="box"] {
+   position: absolute;
+  left: 50%;
+  }
+   [class="column"] {
+	   width:200px;
   }
 }
 .container1{
@@ -100,12 +117,24 @@ header{
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
 }
-#boxes1 .box img{
-  width:100%;
+#boxes1 .box1 img{
+  width:17px;
   transition: transform 0.2s;
 }
 .box1 img:hover {
 
+}
+
+#boxes2 .box2 img{
+  float:left;
+  text-align: center;
+	width:17%;
+	  transition: transform 0.2s;
+}
+.box2 img:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
 }
 #boxesr .boxr img{
   width:100px;
@@ -172,7 +201,7 @@ input[type=submit]:hover {
 
 /* Create two columns that float next to eachother */
 .column {
-  float: left;
+  float: right;
   width: 50%;
   margin-top: 6px;
   padding: 20px;
@@ -185,10 +214,3 @@ input[type=submit]:hover {
   clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
