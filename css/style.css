@@ -217,13 +217,9 @@ input[type=submit]:hover {
 /* showcase */
 
 .slidershow{
-<<<<<<< Updated upstream
-  width: 700px;
-  height: 400px;
-=======
+
   width: 400px;
   height: 300px;
->>>>>>> Stashed changes
   overflow: hidden;
 }
 .middle{
