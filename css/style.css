@@ -216,6 +216,20 @@ input[type=submit]:hover {
 
 /* showcase */
 
+.xyz{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.jax{
+  position: absolute;
+  top: 90%;
+  left: 10%
+  transform: translate(-10%,-10%);
+
+}
+
+
 .slidershow{
 
   width: 400px;
