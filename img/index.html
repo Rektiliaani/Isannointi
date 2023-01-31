@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lasse Niemi</title>
+    <style>
+
+      @media screen and (max-width: 600px) {
+        header, main, footer {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+          }
+      }
+
+      body {
+        background-image: url(img/wall.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      header, main, footer {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      header nav ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+      }
+      header nav a {
+        text-decoration: none;
+        color: white;
+      }
+      main h1 {
+        padding: 20px 0;
+        color: white;
+      }
+      main p {
+        padding: 20px 0;
+        color: white;
+      }
+      footer p {
+        padding: 20px 0;
+        color: white;
+      }
+      a.prev, a.next {
+        font-size: 36px;
+        padding: 10px 20px;
+      }
+      @media only screen and (max-width: 767px) {
+        body {
+        font-size: 1.5em;
+            }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Koti</a></li>
+          <li><a href="about.html">Esittely</a></li>
+          <li><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAAbHMqNhUNTg5R1FNRkc5TkYwMVhWTTBWU09TTlBGNS4u">Tilauslomake</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Isännöinti Lasse Niemi</h1>
+      <p>Is&#228;nn&#246;innin peruspilareita ovat ammattitaito, asiakasl&#228;ht&#246;isyys,      vastuullisuus ja luotettavuus.
+</p>
+
+<div class="slideshow-container">
+  <div class="mySlides">
+    <img src="img/yht1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/yht2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/yht3.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+
+
+    </main>
+
+    <footer>
+      <p>Lasse Niemi - Yksityinen elinkeinonharjoittaja Y-TUNNUS 1339416-8
+IAT, huoltomestarin tutkinto
+	</br>
+  <a href="tel:0500570249"style="font: 20px/2;">Puhelin: 0500570249<a>
+	</br>
+	<a href="mailto:niemi.lasse01@gmail.com">Email: niemi.lasse01@gmail.com</a></p>
+    </footer>
+  </body>
+</html>
