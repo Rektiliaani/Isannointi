@@ -36,7 +36,18 @@
         padding: 20px 0;
         color: white;
       }
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
 
+      .image-container img {
+        width: 25%;
+        height: 200px;
+        object-fit: cover;
+        margin: 5px;
+      }
     </style>
   </head>
   <body>
@@ -51,50 +62,19 @@
     </header>
     <main>
       <h1>Isännöinti Lasse Niemi</h1>
-      <p>Is&#228;nn&#246;innin peruspilareita ovat ammattitaito, asiakasl&#228;ht&#246;isyys,      vastuullisuus ja luotettavuus.
+      <p>"Olen työskennellyt pitkään teknisenä ja taloudellisena isännöitsijänä. Eläkkeelle jäätyäni jatkan toimintaa yksityisenä yrittäjänä." -Lasse
 </p>
 
-<div class="slideshow-container">
-  <div class="mySlides">
-    <img src="img/yht1.png" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="img/yht2.png" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="img/yht3.png" style="width:100%">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
-}
-</script>
-
+    <div class="image-container">
+      <img src="img/kallio.png" alt="Image 1">
+      <img src="img/kukat.jpeg" alt="Image 2">
+      <img src="img/kukka.png" alt="Image 3">
+      <img src="img/meri.png" alt="Image 4">
+      <img src="img/yht1.png" alt="Image 5">
+      <img src="img/yht2.png" alt="Image 6">
+      <img src="img/yht3.png" alt="Image 7">
+      <img src="img/walloriginal.jpeg" alt="Image 8">
+    </div>
 
     </main>
 
